@@ -1,5 +1,7 @@
 # google-data-analytics-professional-certificate
 
+`monday, october 02, 2023`
+
 r programming language:
 
 install.packages("ggplot2")
@@ -23,3 +25,14 @@ ggplot(data = penguins) + geom_point(mapping = aes(x=bill_length_mm, y=bill_dept
 ?geom_bar
 
 ?geom_point
+
+`tuesday, october 03, 2023`
+
+ggplot(data=penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g))
+
+ggplot(data=penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species))
+
+ggplot(data=penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, shape=species))
