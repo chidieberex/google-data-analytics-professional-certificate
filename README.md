@@ -46,7 +46,18 @@ ggplot(data=penguins) +
 ggplot(data=penguins) +
   geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, alpha=species))
 
+ggplot(data=penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color="purple"))
 
+
+`note: aesthetics for points include x, y, color, shape, size, and alpha`
+
+ggplot(data = penguins) +
+  geom_smooth(mapping = aes(x=flipper_length_mm, y=body_mass_g)) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g))
+
+ggplot(data=penguins) +
+  geom_smooth(mapping = aes(x=flipper_length_mm, y=body_mass_g, linetype=species))
 
 
 
