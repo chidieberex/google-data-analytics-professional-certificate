@@ -1,5 +1,7 @@
 # google-data-analytics-professional-certificate
 
+r programming language:
+
 install.packages("ggplot2")
 install.packages("palmerpenguins")
 install.packages("tidyverse")
