@@ -74,6 +74,37 @@ ggplot(data = diamonds) +
 ggplot(data = diamonds) +
   geom_bar(mapping = aes(x=cut, fill=clarity))
 
+`tuesday, october 03, 2023 at about 10:20 cst`
+
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g)) +
+  facet_wrap(~species)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
