@@ -49,7 +49,6 @@ ggplot(data=penguins) +
 ggplot(data=penguins) +
   geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color="purple"))
 
-
 `note: aesthetics for points include x, y, color, shape, size, and alpha`
 
 ggplot(data = penguins) +
@@ -74,13 +73,16 @@ ggplot(data = diamonds) +
 ggplot(data = diamonds) +
   geom_bar(mapping = aes(x=cut, fill=clarity))
 
+
 `tuesday, october 03, 2023 at about 10:20 cst`
 
 ggplot(data = penguins) +
   geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g)) +
   facet_wrap(~species)
 
+
 `wednesday, october 04, 2023 at about 03:20 cst`
+
 `lesson 7 week 4 hands-on activities`
 
 hotel_bookings <- read.csv("hotel_bookings.csv")
