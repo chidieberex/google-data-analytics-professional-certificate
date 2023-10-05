@@ -146,6 +146,19 @@ ggplot(data = hotel_bookings) +
 ggplot(data = hotel_bookings) +
   geom_bar(mapping = aes(x = hotel, fill = market_segment))
 
+ggplot(data = hotel_bookings) +
+  geom_bar(mapping = aes(x = hotel)) +
+  facet_wrap(~market_segment)
+
+install.packages('tidyverse')
+library(tidyverse)
+
+onlineta_city_hotels <- filter(hotel_bookings, 
+                           (hotel=="City Hotel" & 
+                             hotel_bookings$market_segment=="Online TA"))
+
+
+
 
 
 
