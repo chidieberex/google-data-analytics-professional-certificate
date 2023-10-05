@@ -157,6 +157,17 @@ onlineta_city_hotels <- filter(hotel_bookings,
                            (hotel=="City Hotel" & 
                              hotel_bookings$market_segment=="Online TA"))
 
+View(onlineta_city_hotels)
+
+onlineta_city_hotels_v2 <- hotel_bookings %>%
+  filter(hotel=="City Hotel") %>%
+  filter(market_segment=="Online TA")
+
+View(onlineta_city_hotels_v2)
+
+ggplot(data = onlineta_city_hotels) +
+  geom_point(mapping = aes(x = lead_time, y = children))
+
 
 
 
