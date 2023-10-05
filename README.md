@@ -168,7 +168,20 @@ View(onlineta_city_hotels_v2)
 ggplot(data = onlineta_city_hotels) +
   geom_point(mapping = aes(x = lead_time, y = children))
 
+`thursday, october 05, 2023 at about 13:00 cst`
 
+ggplot(data = penguins) +
+         geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) +
+         labs(title = "Palmer Penguins: Body Mass vs. Flipper Length")
+
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) +
+  labs(title = "Palmer Penguins: Body Mass vs. Flipper Length", subtitle = "Sample of Three Penguin Species")
+
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species)) +
+  labs(title = "Palmer Penguins: Body Mass vs. Flipper Length", subtitle = "Sample of Three Penguin Species",
+       caption = "Data collected by Dr. Kristen Gorman")
 
 
 
