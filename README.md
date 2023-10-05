@@ -127,6 +127,16 @@ ggplot(data = hotel_bookings) +
   facet_wrap(~deposit_type~market_segment) +
   theme(axis.text.x = element_text(angle = 45))
 
+`thursday, october 05, 2023 at about 03:00 cst`
+
+`lesson 7 week 4 hands-on activities on filters`
+
+hotel_bookings <- read.csv("hotel_bookings.csv")
+
+head(hotel_bookings)
+
+colnames(hotel_bookings)
+
 
 
 
