@@ -205,6 +205,14 @@ p <- ggplot(data = penguins) +
 
 p + annotate("text", x=220, y=3500, label="The Gentoos are the largest", color = "purple", fontface = "bold", size = 4.5, angle = 25)
 
+`friday, october 06, 2023 at about 02:30 cst`
+
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g, color=species))
+
+ggsave("Three Penguin Species.png")
+
+#`ggsave()` is used to save the last displayed plot.
 
 
 
