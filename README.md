@@ -313,10 +313,27 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
 #end of r markdown intro
 #end of r markdown intro
 
+---
+title: "ggplot_hook"
+author: "Chidi"
+date: "2023-10-07"
+output: html_document
+---
 
+## Setting up my environment
+Notes: setting up my R environment by loading the 'tidyverse' and 'pamler penguins' packages
+
+```{r loading packages}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+#end of r markdown intro
+#end of r markdown intro
 
 
 
